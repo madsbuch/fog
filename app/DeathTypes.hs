@@ -7,3 +7,4 @@ type NumObservations = Int
 data Nationality = Danish
 type Observation = (Age, Gender, Nationality, Year)
 type ObservationWithCount = (Age, Gender, Nationality, Year, NumObservations)
+

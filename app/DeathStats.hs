@@ -1,7 +1,6 @@
 module DeathStats where
 
 import Fog
-import ProbHelpers
 import Control.Monad.Probability
 import qualified System.Random as R
 import DeathTypes

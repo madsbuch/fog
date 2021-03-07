@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e136e7f1ea709eb9fd192f47dd7912a1d38882af81d8ca912123e41a8b9febd4
+-- hash: 1c1f0557e17ef1350d6fc23cf31b3d6932300e0308154a572fbda435b4c59be1
 
 name:           fog
 version:        0.1.0.0
@@ -31,8 +31,9 @@ library
       Control.Monad.Probability
       Control.Monad.Sample
       Control.Monad.Support
+      Data.P
       Fog
-      ProbHelpers
+      MeasureTerms
   other-modules:
       Paths_fog
   hs-source-dirs:
