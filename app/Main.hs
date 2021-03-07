@@ -6,9 +6,20 @@ import DeathData
 main :: IO ()
 main = do
   putStrLn "Objective: Verify following"
-  putStrLn "The average American is expected to live seventy-three years."
-  putStrLn "Therefore if you are sixty-eight you can expect to live five more years,"
-  putStrLn "and should plan accordingly."
+  putStrLn ""
+  putStrLn "> The average Dane is expected to live seventy-seven years."
+  putStrLn "> Therefore if you are seventy-two you can expect to live five more years,"
+  putStrLn "> and should plan accordingly."
+  putStrLn ""
+
+  -- Our observations
   o <- observations
-  let a = expectedAge $ deathRealm o
+  let dist = deathRealm o
+
+  putStr "Life Expectancy: "
+  let a = expectedAge dist
+  putStrLn $ show a
+
+  putStr "Life Expectancy at 77: "
+  let a = expectedAge $ deathRealmPerAge dist 77
   putStrLn $ show a
